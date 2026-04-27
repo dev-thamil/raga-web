@@ -1,0 +1,272 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.raga-body
+{
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+.raga-header
+{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e0e0e;
+    padding: 10px 20px;
+}
+
+.logo-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.raga-logo-text
+{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.raga-logo
+{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links 
+{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover
+{
+    color: #C5A059;
+    text-decoration: underline;
+}
+
+.cta-button
+{
+    background-color: #C5A059;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+/* hero section */
+.hero-section
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title
+{
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-description
+{
+    font-size: 28px;    
+}
+
+.hero-cta-button
+{
+    margin-top: 30px;
+}
+
+/* about section */
+.raga-section
+{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header
+{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section-content
+{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Services section */
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card
+{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-description
+{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Portfolio section */
+.portfolio-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item-description
+{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Testimonials section */
+.testimonial-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item
+{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: card infinite 5s;
+}
+
+.testimonial-item.item-1
+{
+    animation-delay: 0s;
+}
+
+.testimonial-item.item-2
+{
+    animation-delay: 2.66s;
+}
+
+.testimonial-item.item-3
+{
+    animation-delay: 5.33s;
+}
+
+@keyframes card
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(20px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.testimonial-item .section-subheader
+{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #C5A059;
+}
+
+
+
+/* Contact section */
+.contact-form
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.contact-section-description
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-section .cta-button
+{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Footer */
+.raga-footer
+{
+    background-color: #0e0e0e;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-logo
+{
+    margin-bottom: 40px;
+}
+
+.company-address
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.company-name
+{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 920px) {
+    .hero-title
+    {
+        font-size: 36px;
+    }
+}
+
