@@ -7,6 +7,80 @@
 
 .raga-body
 {
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .raga-header {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .hero-title {
+            font-size: 36px;
+        }
+
+        .hero-description {
+            font-size: 20px;
+        }
+
+        .about-section-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .services-container,
+        .portfolio-container,
+        .testimonial-container {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-form {
+            grid-template-columns: 1fr;
+        }
+
+        .raga-footer {
+            padding: 20px;
+        }
+
+        .social-links {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-section {
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 28px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+        }
+
+        .section-header {
+            font-size: 28px;
+        }
+
+        .raga-logo-text {
+            font-size: 16px;
+        }
+
+        .cta-button,
+        .hero-cta-button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
     background-color: #0e0e0e;
     color: #ffffff;
 }
@@ -105,6 +179,7 @@
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .section-header
@@ -119,6 +194,7 @@
     display: flex;
     gap: 40px;
     justify-content: center;
+    padding: auto;
 }
 
 /* Services section */
@@ -156,6 +232,14 @@
 {
     margin-top: 10px;
     font-size: 16px;
+}
+.portfolio-item img {
+    width: 250px;       
+    height: 160px;      
+    object-fit: cover;  
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;   
 }
 
 /* Testimonials section */
@@ -213,47 +297,78 @@
     margin-top: 10px;
     color: #C5A059;
 }
+  .testimonial-item img
+  {
+     width:90px;        
+    height:90px;
+    border-radius: 50%; 
+    object-fit: cover;  
+    display: block;
+    margin: 0 auto 15px;            
+  }
 
 
 
-/* Contact section */
-.contact-form
-{
+
+.contact-form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;   
+    margin:0 auto;     
 }
 
-.contact-section-description
-{
+/* Inputs full width */
+.form-input {
+    width: 100%;
+    padding: 12px;
+     margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Description */
+.contact-section-description {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.contact-section .cta-button
-{
-    font-size: 12px;
-    margin-top: 10px;
+/* Button */
+.contact-section .cta-button {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 /* Footer */
 .raga-footer
 {
     background-color: #0e0e0e;
     color: #ffffff;
-    padding: 40px;
-    text-align: center;
-}
 
-.footer-logo
-{
-    margin-bottom: 40px;
+    text-align: center;
+     background-color: #C5A059;
+     height: auto;
 }
+    social-links
+    {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }   
+
+
+   
+
 
 .company-address
 {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .company-name
@@ -263,10 +378,5 @@
     margin-bottom: 10px;
 }
 
-@media (max-width: 920px) {
-    .hero-title
-    {
-        font-size: 36px;
-    }
-}
+
 
